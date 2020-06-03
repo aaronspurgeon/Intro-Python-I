@@ -8,32 +8,40 @@ y = [8, 9, 10]
 
 # Change x so that it is [1, 2, 3, 4]
 # YOUR CODE HERE
+x.append(4)
 print(x)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 # YOUR CODE HERE
+for num in y:
+    x.append(num)
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
+x.remove(8)
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
+x.insert(5, 99)
 print(x)
 
 # Print the length of list x
 # YOUR CODE HERE
+print(len(x))
 
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
+for num in x:
+    print(num*1000)
 
 z = [
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     [10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
     [20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
     [30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
-    [40 ,41, 42, 43, 44, 45, 46, 47, 48, 49],
+    [40, 41, 42, 43, 44, 45, 46, 47, 48, 49],
     [50, 51, 52, 53, 54, 55, 56, 57, 58, 59],
     [60, 61, 62, 63, 64, 65, 66, 67, 68, 69],
     [70, 71, 72, 73, 74, 75, 76, 77, 78, 79],
@@ -43,7 +51,13 @@ z = [
 
 # Print the first element from each nested list in the matrix z
 # YOUR CODE HERE
+for inner_z in z:
+    print(inner_z[0])
 
-# Print all of the elements that lie on the left-to-right 
-# diagonal of matrix z 
+# Print all of the elements that lie on the left-to-right
+# diagonal of matrix z
 # YOUR CODE HERE
+index = 0
+for inner_z in z:
+    print(inner_z[index])
+    index += 1
