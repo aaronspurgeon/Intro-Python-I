@@ -1,1 +1,1 @@
-print(str(sys.argv))
+print(y)
