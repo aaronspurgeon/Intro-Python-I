@@ -35,15 +35,21 @@ waypoints = [
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
-
+new_dict = {"lat": 50, "lon": 22, "name": "a new place"}
+new_dict_copy = new_dict.copy()
+waypoints.append(new_dict_copy)
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
 # Note: It's okay to access the dictionary using bracket notation on the
 # waypoints list.
 
 # YOUR CODE HERE
-
+waypoints[0].update({"lat": 43, "lon": -130, "name": "not a real place"})
+print(waypoints)
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+for dic_items in waypoints:
+    for key, value in dic_items.items():
+        print(value)
 
-# Use a dictionary comprehension to 
+# Use a dictionary comprehension to
