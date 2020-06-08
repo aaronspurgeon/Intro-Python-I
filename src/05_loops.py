@@ -5,7 +5,7 @@ to the C-style for-loops that JavaScript features.
 
 # Use Python's `range` function with a for-loop to print the numbers 1 through 10
 # YOUR CODE HERE
-for i in range(1, 11, 1):
+for i in range(1, 11):
     print(i)
 # Print out the numbers 1 through 10 using a while-loop
 # YOUR CODE HERE
